@@ -1,0 +1,37 @@
+#variaveis 
+numero = 10 
+real = 1.5
+texto = "Larissa"
+verdadeiro = True 
+falso = False 
+
+#saida de dados 
+print(real)
+print(numero)  
+print(texto)
+print(verdadeiro)
+print(falso)
+print("O numero que foi armazenado na variavel numero é:", numero)
+------------------------------------------------------------------------------------
+#entrada de dados
+numero = 10 
+numero2 = 5
+
+#processamento 
+soma = numero + numero2
+subtracao = numero - numero2
+multi = numero * numero2
+#saida de dados 
+print("A soma dos numeros é ", soma)
+print("A subtraçao dos numeros é ", subtracao)
+print("A multiplicaçao dos numeros é ", multi)
+------------------------------------------------------------------------------------
+
+senha = "anhanguera"
+chute= input("Digite sua senha: ")
+
+if chute == senha: 
+    print("Acesso liberado")
+    
+else: 
+    print("Acesso negado")
