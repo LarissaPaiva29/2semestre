@@ -53,4 +53,14 @@ for i in range(1, 11):
 nome = input("Digite seu nome: ")
 for c in nome:
     print(c)
-    
+-----------------------------------------------------------------------    
+def soma(a,b):
+    return a + b
+
+def subtracao(d,e):
+    return d-e
+
+n1 = float(input("Digite um primeiro numero: "))
+n2 = float(input("Digite o segundo numero: "))
+print("Soma: ", soma(n1,n2))
+print("Subtração: ", subtracao(n1,n2))
