@@ -28,10 +28,29 @@ print("A multiplicaçao dos numeros é ", multi)
 ------------------------------------------------------------------------------------
 
 senha = "anhanguera"
-chute= input("Digite sua senha: ")
+chute = input("Digite sua senha: ")
 
 if chute == senha: 
     print("Acesso liberado")
     
 else: 
     print("Acesso negado")
+
+-----------------------------------------------------------------------------
+num = int(input("Digite um numero para a tabuada: "))
+
+#range é a quantidade de repetiçoes que ira fazer 
+for i in range(1,11):
+    print(num,"x", i, "=", num* i)
+
+-----------------------------------------------------------------------
+num = int(input("Digite um numero para a tabuada: "))
+
+#range é a quantidade de repetiçoes que ira fazer 
+for i in range(1, 11):
+    print(num,"x", i, "=", num* i)
+    
+nome = input("Digite seu nome: ")
+for c in nome:
+    print(c)
+    
