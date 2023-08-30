@@ -64,3 +64,44 @@ n1 = float(input("Digite um primeiro numero: "))
 n2 = float(input("Digite o segundo numero: "))
 print("Soma: ", soma(n1,n2))
 print("Subtração: ", subtracao(n1,n2))
+
+---------------------------------------------------------------
+#Lista de Tarefas
+tasks = []
+
+def add_task(task):
+    tasks.append({"task":task, "completed":False})
+    
+def view_tasks():
+    for index, task in enumerate(tasks, start = 1):
+        status = "concluida" if tasks["completed"] else "Pendente"
+    print(f"{index},{task['task']}-{status}")        
+    
+def mark_completed(task_index):
+    tasks[task_index]["completed"]=True
+    print("Tarefa marcada como concluida")
+    
+while  True:
+    print("1.adicionar tarefas")
+    print("2. visualizar tarefa")
+    print("3.marcar tarefa como concluido")
+    print("4.sair")
+    
+    choice = int(input("escolha uma opçao:"))
+
+    if choice == 1:
+        task =input("Digite a tarefa: ")
+        add_task(task)
+    elif choice == 2:
+        view_tasks()
+    elif choice == 3:
+        View_tasks()
+        task_index = int(input("Digite o numero da tarefa concluida: "))-1
+        mark_completed(task_index)
+    elif choice == 4:
+        print("saindo...")
+        break
+    else: 
+        print("Opçao invalida.Escolha novamente!")
+
+  
