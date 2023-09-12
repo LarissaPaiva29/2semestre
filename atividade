@@ -1,0 +1,49 @@
+def contar_vogais(texto):
+    vogais = "aeiouAEIOU"
+    count = 0 
+ 
+    for char in texto:
+        if char in vogais:
+            count += 1
+    return count
+
+texto = input("Digite uma frase: ")
+
+vogais_contadas = contar_vogais(texto)
+print(f"o total de vogais na frase:{vogais_contadas}")
+-----------------------------------------------------------------
+def calcular_fatorial(numero):
+    if numero ==0: 
+         return 1
+    else:
+        return numero*calcular_fatorial(numero-1)
+numero = int(input("digite um numero para calcular fatorial:"))
+resultado = calcular_fatorial(numero)
+
+print(f"o resultado do {numero} é {resultado}")
+-----------------------------------------------------------------
+
+usuarios = {"cleber": "1234", "malaquias":"1234"}
+
+while True:
+    usuario = input("Digite seu usuario: ")
+    senha = input("digite uma senha: ")
+    
+    if usuario in usuarios and senha == usuarios[usuario]:
+        print("acesso liberado")
+        break
+    else:
+        print("Acesso negado")
+-------------------------------------------------------------------
+def calcular_media(notas):
+    total = sum(notas)
+    #sum é para contar a quantidade notas
+    media = total/len(notas)
+    #len é para multiplicar a quantidade 
+    return media
+    #é [] é para armazenar uma lista 
+notas = [9.0, 8.5, 7.0,5.1]
+media = calcular_media(notas)
+
+print(f"notas{notas}")
+print(f"media {media:.2f} ")
