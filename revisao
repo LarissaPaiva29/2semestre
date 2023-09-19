@@ -1,0 +1,37 @@
+idade = 10 
+
+if idade >=18:
+    print("Voce é maior de idade")
+elif idade == 18:
+    print("parabens")
+else:
+    print("Voce é menor de idade ")
+ #repetiçao    
+for i in range(5):
+    
+    print(i)
+---------------------------------------------------------------
+def imprimir_tabuleiro(tabuleiro):
+
+    for linha in tabuleiro:
+        print("|".join(linha))
+        print("-" *9)
+        
+tabuleiro = [(" "," "," "),(" "," "," "),(" "," "," ")]
+
+jogador_atual = "x"
+while True:
+    imprimir_tabuleiro(tabuleiro)
+    print(f"é a vez do jogador atual {jogador_atual} ")
+    
+    linha = int(input("Digite o numero de (0,1 ou 2): "))
+    coluna =int(input("Digite a coluna de (0,1 ou 2): "))
+    
+    if tabuleiro[linha][coluna] == " ":
+       tabuleiro[linha][coluna] = jogador_atual
+    else:
+        print("Essa casa ta ocupada tente novamente")
+        continue 
+    jogador_atual ="0" if jogador_atual == "x" else "x"
+    
+    
