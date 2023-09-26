@@ -105,3 +105,22 @@ while  True:
         print("Opçao invalida.Escolha novamente!")
 
   
+-----------------------------------------------------------
+despesas = []
+def calcular_despesas(despesas):
+despesa1 = str(input("Digite uma despesa:"))
+despesa2 = str(input("Digite outra despesa:"))
+   
+valor = int
+
+valor2 = int(input(f"Qual o valor que voce gasta com {despesa1} "))
+valor3 = int(input(f"Qual o valor que voce gasta com {despesa2} "))
+valor1 = valor2 + valor3
+    
+    return valor
+    #é [] é para armazenar uma lista 
+    despesas = [f"{despesa1},{despesa2}"]
+    valor1 = [f"{valor1},{valor2}"]
+
+    print(f"notas{despesas}")
+    print(f"media {valor1} ")
