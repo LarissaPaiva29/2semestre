@@ -1,0 +1,9 @@
+create table Livros ( -- criaçao de tabelas
+  id int primary key,
+  autor varchar(100),
+  titulo varchar(100), 
+  DataLançamento date
+ ); 
+insert into Clientes (id, nome, email, DataCadastro) -- Chamando a tabela 
+ values(1, 'larissa', 'larissa@gmail.com', '2024-02-27') -- inserindo dados na tabela 
+  
