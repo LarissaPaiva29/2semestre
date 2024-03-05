@@ -7,3 +7,16 @@ create table Livros ( -- criaçao de tabelas
 insert into Clientes (id, nome, email, DataCadastro) -- Chamando a tabela 
  values(1, 'larissa', 'larissa@gmail.com', '2024-02-27') -- inserindo dados na tabela 
   
+
+    create table emprestimo (
+      id INT PRIMARY KEY, 
+      usuariosID INT,
+      livroID INT, 
+      dataEmprestimo date, 
+      dataDevolucao date, 
+      statusDevolucao enum('pendente', 'devolvido', 'atrasado'), 
+      FOREING KEY (usuarioID) REFERENCES usuario(ID),
+      FOREING KEY (livroID) REFERENCES livro(ID)
+      
+      
+      );
